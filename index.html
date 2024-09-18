@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Tutorial</title>
+
+    <!-- General links -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--  -->
+
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+    <!--  -->
+
+    <!-- javascript links -->
+    <script src="javascript.js"></script>
+    <!--  -->
+</head>
+
+<body>
+    <!-- I created a funcrions that do this in .js file -->
+    <h1>changing html content</h1>
+    <p id="changehtml">Html paraghraph</p>
+    <button onclick="changehtml()">Click Me!</button>
+
+    <h1>change photo source</h1>
+    <button onclick="changesrctocircle()">Change to Circle!</button>
+    <img id="changephotosrc" src="/imgs/circle.png" alt="">
+    <button onclick="changesrctosquare()">Change to Square!</button>
+
+    <h1>change style</h1>
+    <p id="changestyle">Javascript can change style</p>
+    <button onclick="changestyle()">Change style!</button>
+
+    <h1>Javascript displays</h1>
+
+    <!-- InnerHTML to access HTML element -->
+    <h3>innerHTML</h3>
+    <p>This is 5+4 with innerHTML</p>
+    <p id="sum"></p>
+    <script>document.getElementById('sum').innerHTML = 5 + 4;</script>
+
+    <!-- document.write can write output -->
+    <h3>document.write</h3>
+    <p>This is 5+4 with document.write</p>
+    <script>document.write(5 + 4)</script>
+
+    <br><br>
+
+    <!-- Can destroy the page with document.write after HTML is loaded -->
+    <button type="button" onclick="document.write(5+4)">Kill the page</button>
+
+    <!-- Its clear what it can do from its name -->
+    <h3>widow.alert or alert</h3>
+    <button onclick="window.alert('This is a website')">Get an alert</button>
+    <button type="button" onclick="alert(5+4)">Get another alert</button>
+
+    <!-- console.log used for debugging -->
+    <h3>console.log</h3>
+    <p>Enter insprctor then debugging and refresh the page</p>
+    <script>console.log('log')</script>
+
+    <!-- If you have a printer you can try it -->
+    <h3>window.print</h3>
+    <button type="button" onclick="window.print()">Print</button>
+
+    <!-- Can creat some variables , its like math -->
+    <h1>Statements</h1>
+    <p>we have 5 orange cats and 4 white cat</p>
+    <p id="statements"></p>
+    <script>
+        let x, y, z; // 1st statement
+
+        // x is the number of orange cats , y is the number of the white cats , z is the total number of cats 
+
+        x = 5;     //2nd statement
+        y = 4;     //3rd statement
+        z = x + y; //4th statement
+
+        document.getElementById('statements').innerHTML = 'value of the cats total number is ' + z + '.';
+    </script>
+
+
+</body>
+
+</html>
