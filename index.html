@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <!-- I created a funcrions that do this in .js file -->
+    <!-- I created a functions that do this in .js file -->
     <h1>changing html content</h1>
-    <p id="changehtml">Html paraghraph</p>
+    <p id="changehtml">Html paragraph</p>
     <button onclick="changehtml()">Click Me!</button>
 
     <h1>change photo source</h1>
@@ -59,14 +59,14 @@
 
     <!-- console.log used for debugging -->
     <h3>console.log</h3>
-    <p>Enter insprctor then debugging and refresh the page</p>
+    <p>Enter inspector then debugging and refresh the page</p>
     <script>console.log('log')</script>
 
     <!-- If you have a printer you can try it -->
     <h3>window.print</h3>
     <button type="button" onclick="window.print()">Print</button>
 
-    <!-- Can creat some variables , its like math -->
+    <!-- Can create some variables , its like math -->
     <h1>Statements</h1>
     <p>we have 5 orange cats and 4 white cat</p>
     <p id="statements"></p>
@@ -74,13 +74,25 @@
         let x, y, z; // 1st statement
 
         // x is the number of orange cats , y is the number of the white cats , z is the total number of cats 
-
+        //semi-colons are highly recommended but not essential
         x = 5;     //2nd statement
         y = 4;     //3rd statement
         z = x + y; //4th statement
 
         document.getElementById('statements').innerHTML = 'value of the cats total number is ' + z + '.';
     </script>
+
+    <!-- Create variables -->
+    <script>
+        var s;
+        let p;
+    </script>
+    <!-- Use variables -->
+    <script>
+        s = 5;
+        p = 9;
+    </script>
+
 
 
 </body>
